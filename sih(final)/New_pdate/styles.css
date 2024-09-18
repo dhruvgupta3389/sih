@@ -1,0 +1,166 @@
+
+/* Add a border around the entire body */
+body {
+    background-image: url('./06ded2be-68c1-4023-ab8c-0783ccfb952c.jpg');
+    
+    background-repeat: repeat;
+    margin: 35px;
+    border: 5px solid black; 
+    /* padding: 15px; Optional: Adds padding inside the body for a nicer layout */
+    border-radius: 10px; /* Optional: Rounds the corners of the border */
+    background-position: center;
+    border-radius: 30px;
+     box-shadow: 10px 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px); /* Frosted glass blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for extra effect */
+            
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 1, 1, 0.5); /* Black overlay with 50% transparency */
+    /* Adjust the color and opacity (0 to 1) as needed */
+}
+
+
+    /* Styling for the search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: invert;
+}
+
+.search-bar:focus {
+    border-color: hwb(300 20% 80% / 0.029);
+}
+
+.search-btn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #8d97a2c2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.search-btn:hover {
+    background-color: #171718;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.content{
+    width: 250px;
+    height:300px;
+    background-color: rgba(255, 255, 255, 0.1); /* Very light transparent background */
+    backdrop-filter: blur(10px); /* Glassy blur effect */
+    border-radius: 12px; /* Smooth rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: background-color 0.4s ease, backdrop-filter 0.4s ease; /* Smooth transition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-shadow: 28px 20px 20px rgba(0.5, 0.5, 0.5, 0.3); /* Enhance shadow on hover */
+
+}
+
+.content:hover{
+    background-color: rgba(255, 255, 255, 0.2); /* Increase transparency on hover */
+    backdrop-filter: blur(15px); /* Stronger blur on hover */
+    
+}
+.content.button{
+    background-color: #171718;
+
+}
+.box-btn{
+    position: absolute;
+    bottom: 10px; /* Position the button 10px from the bottom */
+    right: 10px; /* Position the button 10px from the right */
+    padding: 8px 12px;
+    background-color: #007BFF; /* Blue background */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.box-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+
+}
+.pic{
+    position: absolute;
+    top: 10px; /* Position 10px from the top */
+    left: 10px; /* Position 10px from the left */
+    width: 80px; /* Set width of the circle */
+    height: 80px; /* Set height of the circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+    border: none; /* Optional: White border around the circle */
+    overflow: hidden;
+}
+
+p{
+    top: 4px;
+    right: 70px;
+    text-align: right;
+    position: absolute;
+    font-size: 16px;
+    color:#171718
+}
+.txt{
+    margin: 120px;
+}
+
+/* Star rating styling */
+.star-rating {
+    position: absolute;
+    top: 40px; /* Position below the name */
+    right: 40px; /* Align with the name */
+    color: gold; /* Golden stars */
+}
+
+.star {
+    font-size: 18px; /* Size of the stars */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Change color on hover */
+.star:hover,
+.star:hover ~ .star {
+    color: darkorange; /* Highlight stars on hover */
+}

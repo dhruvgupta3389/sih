@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Connect</title>
+    <link rel="stylesheet" href="./homepage.css"> <!-- Linking CSS -->
+</head>
+<body id="blur">
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <img src="./logofinal.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Mentors</a></li>
+                <li><a href="#">How It Works</a></li>
+            </ul>
+            <a href="./index.html" class="cta1">Login/Sign-up</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find a Mentor in </h1>
+            <h1><span class="changing-text"></span></h1>
+            <p class="underline">"Let's make a bright career together"</p>
+            <a href="#" class="cta">Join Now</a>
+        </div>
+    </section>
+<!-- Mentor section -->
+    <section id="mentor-domains">
+        <h2>Every Domain, Every Industry Covered</h2>
+        <p>Our mentors are equipped to guide you in any field you're passionate about</p>
+<!-- Grid section -->
+<div class="grid-container" id="content">
+    <div class="grid-item" data-popup="frontend" onclick="togglePopup('frontend')">
+        <h3>Frontend Developer</h3>
+        <p></p>
+    </div>
+    <div class="grid-item" data-popup="backend" onclick="togglePopup('backend')">
+        <h3>Backend Developer</h3>
+    </div>
+    <div class="grid-item" data-popup="fullstack" onclick="togglePopup('fullstack')">
+        <h3>Fullstack Developer</h3>
+    </div>
+    <div class="grid-item" data-popup="devops" onclick="togglePopup('devops')">
+        <h3>DevOps / SRE</h3>
+    </div>
+    <div class="grid-item" data-popup="data-analyst" onclick="togglePopup('data-analyst')">
+        <h3>Data Analyst</h3>
+
+    </div>
+    <div class="grid-item" data-popup="data-scientist" onclick="togglePopup('data-scientist')">
+        <h3>Data Scientist</h3>
+
+    </div>
+    <div class="grid-item" data-popup="data-engineer" onclick="togglePopup('data-engineer')">
+        <h3>Data Engineer</h3>
+
+    </div>
+    <div class="grid-item" data-popup="ai-ml" onclick="togglePopup('ai-ml')">
+        <h3>AI / ML</h3>
+
+    </div>
+    <div class="grid-item" data-popup="marketing" onclick="togglePopup('marketing')">
+        <h3>Marketing</h3>
+
+    </div>
+    <div class="grid-item" data-popup="sales" onclick="togglePopup('sales')">
+        <h3>Sales</h3>
+
+    </div>
+    <div class="grid-item" data-popup="business-analyst" onclick="togglePopup('business-analyst')">
+        <h3>Business Analyst</h3>
+
+    </div>
+    <div class="grid-item" data-popup="finance" onclick="togglePopup('finance')">
+        <h3>Finance</h3>
+
+    </div>
+    <div class="grid-item" data-popup="product-manager" onclick="togglePopup('product-manager')">
+        <h3>Product Manager</h3>
+
+    </div>
+    <div class="grid-item" data-popup="ui-ux" onclick="togglePopup('ui-ux')">
+        <h3>UI/UX Designer</h3>
+
+    </div>
+    <div class="grid-item" data-popup="project-manager" onclick="togglePopup('project-manager')">
+        <h3>Project Manager</h3>
+    </div>
+</div>
+
+<!-- Popups with Detailed Roadmaps -->
+<div class="popup" id="popup-frontend">
+    <h3>Frontend Developer Roadmap</h3>
+    <p>Frontend developers need to focus on:</p>
+    <ul>
+        <li><b>HTML, CSS, JavaScript</b> - Core building blocks of web development</li>
+        <li><b>Responsive Design</b> - Using Flexbox, CSS Grid, and media queries</li>
+        <li><b>Frameworks/Libraries</b> - React, Vue.js, Angular, Svelte</li>
+        <li><b>Version Control</b> - Git, GitHub, GitLab for managing code</li>
+        <li><b>Web Performance</b> - Lighthouse, lazy loading, minification</li>
+        <li><b>Testing</b> - Jest, Mocha, Cypress</li>
+        <li><b>Web Security</b> - XSS, CSRF, CORS</li>
+    </ul>
+    <button onclick="togglePopup('frontend')">Close</button>
+</div>
+
+<div class="popup" id="popup-backend">
+    <h3>Backend Developer Roadmap</h3>
+    <p>To become a backend developer, here’s a roadmap:</p>
+    <ul>
+        <li><b>Languages</b> - Node.js, Python, Java, Ruby, PHP</li>
+        <li><b>Frameworks</b> - Express, Django, Flask, Spring</li>
+        <li><b>Databases</b> - MySQL, PostgreSQL, MongoDB, Redis</li>
+        <li><b>API Design</b> - REST, GraphQL, gRPC</li>
+        <li><b>Authentication</b> - OAuth, JWT, Passport.js</li>
+        <li><b>Cloud & Hosting</b> - AWS, Azure, GCP, Docker</li>
+        <li><b>Testing</b> - Unit testing, Integration testing</li>
+        <li><b>Message Brokers</b> - RabbitMQ, Kafka</li>
+    </ul>
+    <button onclick="togglePopup('backend')">Close</button>
+</div>
+
+<div class="popup" id="popup-fullstack">
+    <h3>Fullstack Developer Roadmap</h3>
+    <p>A fullstack developer must know both frontend and backend:</p>
+    <ul>
+        <li>Frontend + Backend knowledge</li>
+        <li>Understanding of DevOps tools (Docker, Kubernetes)</li>
+        <li>Database skills (SQL, NoSQL)</li>
+        <li>Deployment automation and CI/CD pipelines</li>
+    </ul>
+    <button onclick="togglePopup('fullstack')">Close</button>
+</div>
+
+<div class="popup" id="popup-devops">
+    <h3>DevOps/SRE Roadmap</h3>
+    <p>Here’s what to focus on for DevOps and Site Reliability Engineering:</p>
+    <ul>
+        <li>Linux/Unix skills</li>
+        <li>CI/CD pipelines (Jenkins, Travis CI)</li>
+        <li>Containers (Docker) & Orchestration (Kubernetes)</li>
+        <li>Cloud Platforms (AWS, GCP, Azure)</li>
+        <li>Infrastructure as Code (Terraform, Ansible)</li>
+        <li>Monitoring (Prometheus, Grafana)</li>
+    </ul>
+    <button onclick="togglePopup('devops')">Close</button>
+</div>
+<!-- Data Analyst Popup -->
+<div class="popup" id="popup-data-analyst">
+    <h3>Data Analyst Roadmap</h3>
+    <p>Key skills for Data Analysts include:</p>
+    <ul>
+        <li><b>Data Analysis Tools</b> - Excel, Google Sheets, SQL</li>
+        <li><b>Data Visualization</b> - Tableau, Power BI, Matplotlib</li>
+        <li><b>Statistical Analysis</b> - R, Python (Pandas, NumPy)</li>
+        <li><b>Database Management</b> - MySQL, PostgreSQL, MongoDB</li>
+        <li><b>Data Cleaning</b> - Handling missing values, data transformation</li>
+    </ul>
+    <button onclick="togglePopup('data-analyst')">Close</button>
+</div>
+
+<!-- Data Scientist Popup -->
+<div class="popup" id="popup-data-scientist">
+    <h3>Data Scientist Roadmap</h3>
+    <p>Data Scientists need expertise in:</p>
+    <ul>
+        <li><b>Programming Languages</b> - Python, R</li>
+        <li><b>Machine Learning</b> - Scikit-learn, TensorFlow, Keras</li>
+        <li><b>Statistical Analysis</b> - Hypothesis testing, Regression analysis</li>
+        <li><b>Data Visualization</b> - Seaborn, Plotly, Matplotlib</li>
+        <li><b>Big Data Technologies</b> - Hadoop, Spark</li>
+        <li><b>Databases</b> - SQL, NoSQL</li>
+    </ul>
+    <button onclick="togglePopup('data-scientist')">Close</button>
+</div>
+
+<!-- Data Engineer Popup -->
+<div class="popup" id="popup-data-engineer">
+    <h3>Data Engineer Roadmap</h3>
+    <p>Data Engineers focus on:</p>
+    <ul>
+        <li><b>Data Warehousing</b> - Redshift, BigQuery, Snowflake</li>
+        <li><b>ETL Processes</b> - Apache NiFi, Talend, Airflow</li>
+        <li><b>Big Data Technologies</b> - Hadoop, Spark</li>
+        <li><b>Databases</b> - SQL (PostgreSQL, MySQL), NoSQL (MongoDB, Cassandra)</li>
+        <li><b>Data Modeling</b> - Schema design, Data marts</li>
+        <li><b>Cloud Platforms</b> - AWS, Azure, GCP</li>
+    </ul>
+    <button onclick="togglePopup('data-engineer')">Close</button>
+</div>
+
+<!-- AI/ML Popup -->
+<div class="popup" id="popup-ai-ml">
+    <h3>AI / ML Roadmap</h3>
+    <p>For a career in AI/ML, focus on:</p>
+    <ul>
+        <li><b>Core Concepts</b> - Supervised Learning, Unsupervised Learning, Neural Networks</li>
+        <li><b>Libraries/Frameworks</b> - TensorFlow, PyTorch, Keras</li>
+        <li><b>Mathematics</b> - Linear Algebra, Calculus, Probability</li>
+        <li><b>Data Handling</b> - Data preprocessing, Feature engineering</li>
+        <li><b>Advanced Topics</b> - Natural Language Processing, Computer Vision</li>
+    </ul>
+    <button onclick="togglePopup('ai-ml')">Close</button>
+</div>
+
+<!-- Marketing Popup -->
+<div class="popup" id="popup-marketing">
+    <h3>Marketing Roadmap</h3>
+    <p>To excel in Marketing, consider:</p>
+    <ul>
+        <li><b>Digital Marketing</b> - SEO, SEM, Content Marketing</li>
+        <li><b>Social Media</b> - Facebook Ads, Google Ads, Instagram Marketing</li>
+        <li><b>Analytics</b> - Google Analytics, A/B Testing</li>
+        <li><b>Marketing Automation</b> - HubSpot, Mailchimp</li>
+        <li><b>Market Research</b> - Surveys, Competitive Analysis</li>
+    </ul>
+    <button onclick="togglePopup('marketing')">Close</button>
+</div>
+
+<!-- Sales Popup -->
+<div class="popup" id="popup-sales">
+    <h3>Sales Roadmap</h3>
+    <p>Key areas for a career in Sales include:</p>
+    <ul>
+        <li><b>Sales Techniques</b> - Cold Calling, Negotiation, Lead Generation</li>
+        <li><b>CRM Tools</b> - Salesforce, HubSpot, Zoho CRM</li>
+        <li><b>Sales Strategies</b> - Account-Based Marketing, Upselling, Cross-Selling</li>
+        <li><b>Data Analysis</b> - Sales Metrics, Forecasting</li>
+        <li><b>Customer Relationship</b> - Customer Service, Client Management</li>
+    </ul>
+    <button onclick="togglePopup('sales')">Close</button>
+</div>
+
+<!-- Business Analyst Popup -->
+<div class="popup" id="popup-business-analyst">
+    <h3>Business Analyst Roadmap</h3>
+    <p>Business Analysts should focus on:</p>
+    <ul>
+        <li><b>Requirements Gathering</b> - Elicitation techniques, Documentation</li>
+        <li><b>Data Analysis</b> - SQL, Excel, Data Visualization tools</li>
+        <li><b>Business Process Modeling</b> - BPMN, UML</li>
+        <li><b>Stakeholder Management</b> - Communication, Negotiation</li>
+        <li><b>Project Management</b> - Agile, Scrum</li>
+    </ul>
+    <button onclick="togglePopup('business-analyst')">Close</button>
+</div>
+
+<!-- Finance Popup -->
+<div class="popup" id="popup-finance">
+    <h3>Finance Roadmap</h3>
+    <p>Finance professionals need skills in:</p>
+    <ul>
+        <li><b>Financial Analysis</b> - Financial statements, Ratios</li>
+        <li><b>Accounting Software</b> - QuickBooks, Xero</li>
+        <li><b>Investment Analysis</b> - Valuation techniques, Portfolio management</li>
+        <li><b>Risk Management</b> - Hedging, Derivatives</li>
+        <li><b>Regulatory Knowledge</b> - Compliance, Financial regulations</li>
+    </ul>
+    <button onclick="togglePopup('finance')">Close</button>
+</div>
+
+<!-- Product Manager Popup -->
+<div class="popup" id="popup-product-manager">
+    <h3>Product Manager Roadmap</h3>
+    <p>Product Managers should excel in:</p>
+    <ul>
+        <li><b>Product Strategy</b> - Vision, Roadmap, Market research</li>
+        <li><b>Product Development</b> - Agile methodology, Product lifecycle</li>
+        <li><b>Customer Insights</b> - User feedback, A/B testing</li>
+        <li><b>Stakeholder Management</b> - Communication, Negotiation</li>
+        <li><b>Metrics & Analytics</b> - KPIs, Performance measurement</li>
+        <li><b>Tools</b> - JIRA, Asana, Productboard</li>
+    </ul>
+    <button onclick="togglePopup('product-manager')">Close</button>
+</div>
+
+<!-- UI/UX Designer Popup -->
+<div class="popup" id="popup-ui-ux">
+    <h3>UI/UX Designer Roadmap</h3>
+    <p>UI/UX Designers should be proficient in:</p>
+    <ul>
+        <li><b>Design Principles</b> - User-Centered Design, Wireframing</li>
+        <li><b>Tools</b> - Sketch, Figma, Adobe XD</li>
+        <li><b>Prototyping</b> - Interactive prototypes, User flows</li>
+        <li><b>User Research</b> - Usability testing, Surveys</li>
+        <li><b>Design Systems</b> - Component libraries, Style guides</li>
+    </ul>
+    <button onclick="togglePopup('ui-ux')">Close</button>
+</div>
+
+<!-- Project Manager Popup -->
+<div class="popup" id="popup-project-manager">
+    <h3>Project Manager Roadmap</h3>
+    <p>Project Managers should focus on:</p>
+    <ul>
+        <li><b>Project Management Methodologies</b> - Agile, Scrum, Waterfall</li>
+        <li><b>Project Planning</b> - Gantt charts, Work Breakdown Structure</li>
+        <li><b>Risk Management</b> - Risk assessment, Mitigation strategies</li>
+        <li><b>Stakeholder Communication</b> - Reporting, Negotiation</li>
+        <li><b>Tools</b> - JIRA, Trello, Microsoft Project</li>
+    </ul>
+    <button onclick="togglePopup('project-manager')">Close</button>
+</div>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay"></div>
+    </section> 
+
+    <section class="findmentor">
+        <div class="container">
+            <div class="card">
+                <div class="mentor-info">
+                    <div>
+                        <h2>Ansh Sharma</h2>
+                        <p>Web Developer</p>
+                    </div>
+                    <img src="./ansh.jpg" alt="Ansh Sharma">
+                </div>
+                <div class="mentor-services">
+                    <button class="service">Mentorship <span class="price">Rs1000/month</span></button>
+                    <button class="service">Intro Session</button>
+                    <button class="service">CV Review</button>
+                    <button class="service">Expert Session</button>
+                </div>
+            </div>
+            <div class="content">
+                <h1>We care for you Future!</h1>
+                <p>Let's navigate the web development landscape together - I'll share my expertise and experience to help you chart your learning path, overcome obstacles, and reach your career milestones!</p>
+                <div class="benefits">
+                    <div class="benefit">
+                        <p>● Thousands of mentors available</p>
+                    </div>
+                    <div class="benefit">
+                        
+                        <p>● Free trial</p>
+                    </div>
+                    <div class="benefit">
+                        
+                        <p>● 1-on-1 calls</p>
+                    </div>
+                    <div class="benefit">
+                       
+                        <p>● Flexible program structures</p>
+                    </div>
+                    <div class="benefit">  
+                        <p>● Personal chats</p>
+                    </div>
+                    <div class="benefit">  
+                        <p>● Live Sessions</p>
+                    </div>
+                </div>
+                <button class="amentor">Explore more →</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Our Features</h2>
+        <div class="feature-item">
+            <h3>1-on-1 Mentorship</h3>
+            <p>Personalized guidance from experts in your field of choice.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Recorded & Live Sessions</h3>
+            <p>Access live sessions or watch them later at your convenience.</p>
+        </div>
+        <div class="youtube-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" 
+                    title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="testimonials">
+            <section class="mentor-section">
+                <h2>Trusted by Over 100+ Mentors</h2>
+                <p>Choose your ideal mentor and get started with a FREE trial session</p>
+            
+                <div class="filter-buttons">
+                    <button class="filter-btn" onclick="filterMentors('engineering')">Engineering</button>
+                    <button class="filter-btn" onclick="filterMentors('data-science')">Data Science</button>
+                    <button class="filter-btn" onclick="filterMentors('business')">Business</button>
+                    <button class="filter-btn" onclick="filterMentors('product')">Product</button>
+                </div>
+            
+                <div class="mentor-cards" id="mentor-cards">
+                    <div class="mentor-card" data-category="engineering">
+                        <img src="./menotr1.jpeg" alt="Mentor 1">
+                        <h3>Anarghya Kini</h3>
+                        <p>Quality Assurance Engineer II</p>
+                        <p>7 Years of Experience</p>
+                        <p><img src="amazon.png" alt="Amazon"> Amazon</p>
+                        <button class="trial-btn">Book a FREE Trial</button>
+                    </div>
+                    <div class="mentor-card" data-category="engineering">
+                        <img src="./mentor2.jpeg" alt="Mentor 2">
+                        <h3>Neetesh Mittal</h3>
+                        <p>Tech Lead</p>
+                        <p>12 Years of Experience</p>
+                        <p><img src="meta.png" alt="Meta"> Meta</p>
+                        <button class="trial-btn">Book a FREE Trial</button>
+                    </div>
+                    <div class="mentor-card" data-category="business">
+                        <img src="./mentor3.jpeg" alt="Mentor 3">
+                        <h3>Subhahu Jain</h3>
+                        <p>SDE-2</p>
+                        <p>4 Years of Experience</p>
+                        <p><img src="salesforce.png" alt="Salesforce"> Salesforce</p>
+                        <button class="trial-btn">Book a FREE Trial</button>
+                    </div>
+                    <!-- Add more mentor cards as needed -->
+                </div>
+            </section>
+        </div>
+    </section>
+    
+    <section id="reviews-section" class="reviews-container">
+        <h2>"Some reviews from our students"</h2>
+        <div id="review-cards" class="review-grid">
+          <!-- Reviews will be inserted here by JavaScript -->
+        </div>
+        <button id="show-more-btn" class="show-more-btn">Show More</button>
+      </section>
+      
+    <script src="./homepage.js"></script> <!-- Linking JavaScript -->
+</body>
+</html>

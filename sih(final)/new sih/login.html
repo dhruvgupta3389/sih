@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="expertise">Expertise:</label>
+        <input type="text" id="expertise" name="expertise" required>
+        
+        <label for="experience">Experience (years):</label>
+        <input type="number" id="experience" name="experience" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const expertise = document.getElementById('expertise').value;
+            const experience = document.getElementById('experience').value;
+
+            const user = { name, expertise, experience };
+
+            // Save user data to local storage
+            localStorage.setItem('user', JSON.stringify(user));
+
+            // Redirect to main.html
+            window.location.href = './main.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Feedback Form</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background: url('./th.jpeg') no-repeat center center fixed; /* Background image */
+            background-size: cover; /* Ensure the image covers the entire page */
+        }
+
+        /* Container to hold the form */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            padding: 20px 40px;
+            margin: 50px auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #555;
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="date"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .radio-group, .checkbox-group {
+            margin-bottom: 20px;
+        }
+
+        .radio-group input, .checkbox-group input {
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4CAF50;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            input[type="submit"] {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Career Guidance Feedback Form</h2>
+        
+        <form id="feedbackForm">
+            <!-- Name (Optional) -->
+            <label for="name">Name (Optional):</label>
+            <input type="text" id="name" name="name">
+            
+            <!-- Date of Career Guidance Session -->
+            <label for="date">Date of Career Guidance Session:</label>
+            <input type="date" id="date" name="date">
+            
+            <!-- How did you hear about us? -->
+            <label>How did you hear about our career guidance service?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="source" value="Online Search"> Online Search<br>
+                <input type="checkbox" name="source" value="Social Media"> Social Media<br>
+                <input type="checkbox" name="source" value="Referral"> Referral<br>
+                <input type="checkbox" name="source" value="School/University"> School/University<br>
+                <input type="checkbox" name="source" value="Other"> Other: <input type="text" name="other_source">
+            </div>
+
+            <!-- Career Guidance Evaluation -->
+            <div class="section-title">Career Guidance Evaluation:</div>
+
+            <!-- Overall quality rating -->
+            <label>How would you rate the overall quality of the career guidance you received?</label>
+            <div class="radio-group">
+                <input type="radio" name="overall_quality" value="Excellent"> Excellent<br>
+                <input type="radio" name="overall_quality" value="Good"> Good<br>
+                <input type="radio" name="overall_quality" value="Average"> Average<br>
+                <input type="radio" name="overall_quality" value="Poor"> Poor
+            </div>
+
+            <!-- Was the information helpful? -->
+            <label>Was the information provided by the counselor helpful?</label>
+            <div class="radio-group">
+                <input type="radio" name="info_helpful" value="Very Helpful"> Very Helpful<br>
+                <input type="radio" name="info_helpful" value="Somewhat Helpful"> Somewhat Helpful<br>
+                <input type="radio" name="info_helpful" value="Neutral"> Neutral<br>
+                <input type="radio" name="info_helpful" value="Not Helpful"> Not Helpful
+            </div>
+
+            <!-- Counselor understanding -->
+            <label>How well did the counselor understand your career goals and aspirations?</label>
+            <div class="radio-group">
+                <input type="radio" name="counselor_understanding" value="Extremely well"> Extremely well<br>
+                <input type="radio" name="counselor_understanding" value="Well"> Well<br>
+                <input type="radio" name="counselor_understanding" value="Fairly well"> Fairly well<br>
+                <input type="radio" name="counselor_understanding" value="Not well"> Not well
+            </div>
+
+            <!-- Confidence after the session -->
+            <label>Did you feel more confident in your career path after the session?</label>
+            <div class="radio-group">
+                <input type="radio" name="confidence" value="Very confident"> Yes, very confident<br>
+                <input type="radio" name="confidence" value="Somewhat confident"> Somewhat confident<br>
+                <input type="radio" name="confidence" value="No change"> No change<br>
+                <input type="radio" name="confidence" value="Less confident"> Less confident
+            </div>
+
+            <!-- Counselor communication skills -->
+            <label>Rate the communication skills of the career counselor:</label>
+            <div class="radio-group">
+                <input type="radio" name="counselor_communication" value="Excellent"> Excellent<br>
+                <input type="radio" name="counselor_communication" value="Good"> Good<br>
+                <input type="radio" name="counselor_communication" value="Average"> Average<br>
+                <input type="radio" name="counselor_communication" value="Poor"> Poor
+            </div>
+
+            <!-- Personalized Career Guidance -->
+            <div class="section-title">Personalized Career Guidance:</div>
+
+            <!-- Relevance of career options -->
+            <label>How relevant were the career options suggested during your session?</label>
+            <div class="radio-group">
+                <input type="radio" name="career_relevance" value="Highly relevant"> Highly relevant<br>
+                <input type="radio" name="career_relevance" value="Somewhat relevant"> Somewhat relevant<br>
+                <input type="radio" name="career_relevance" value="Not relevant"> Not relevant
+            </div>
+
+            <!-- Useful resources -->
+            <label>Did you receive useful resources (websites, books, or contacts) for further career exploration?</label>
+            <div class="radio-group">
+                <input type="radio" name="resources" value="Yes"> Yes<br>
+                <input type="radio" name="resources" value="Somewhat"> Somewhat<br>
+                <input type="radio" name="resources" value="No"> No
+            </div>
+
+            <!-- Suggestions for Improvement -->
+            <div class="section-title">Suggestions for Improvement:</div>
+
+            <!-- What did you like most? -->
+            <label>What did you like most about the career guidance session?</label>
+            <textarea name="like_most" rows="4"></textarea>
+
+            <!-- Areas of improvement -->
+            <div class="feedback">
+                <label>Your feedback would be precious for us!</label>
+                <textarea class="feedback-text" name="improvements" rows="4"></textarea>
+            </div>
+
+            <!-- Would you recommend? -->
+            <label>Would you recommend this career guidance service to others?</label>
+            <div class="radio-group">
+                <input type="radio" name="recommend" value="Definitely"> Definitely<br>
+                <input type="radio" name="recommend" value="Maybe"> Maybe<br>
+                <input type="radio" name="recommend" value="No"> No
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your feedback!');
+            this.reset();  // Reset form after submission
+        });
+    </script>
+</body>
+</html>
